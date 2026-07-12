@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アオロルト | Business Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+:root{
+--black:#050505;
+--magenta:#ff008c;
+--lavender:#c8a2ff;
+--card:#121212;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:var(--magenta);
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:var(--lavender);
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:
+radial-gradient(circle at top right,#ff008c33,transparent 40%),
+radial-gradient(circle at bottom left,#c8a2ff22,transparent 45%),
+#050505;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:var(--magenta);
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+font-size:18px;
+opacity:.85;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 38px;
+background:var(--magenta);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--lavender);
+color:black;
+transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:var(--lavender);
+}
+
+/* Cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:var(--card);
+padding:35px;
+border-radius:20px;
+transition:.4s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:var(--magenta);
+box-shadow:0 0 30px #ff008c33;
+}
+
+.card h3{
+margin-bottom:15px;
+color:var(--magenta);
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about p{
+line-height:1.8;
+opacity:.9;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+form{
+max-width:650px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,textarea{
+padding:18px;
+background:#111;
+border:none;
+border-radius:12px;
+color:white;
+outline:none;
+}
+
+textarea{
+height:180px;
+resize:none;
+}
+
+button{
+padding:15px;
+background:var(--magenta);
+border:none;
+border-radius:30px;
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:var(--lavender);
+color:black;
+}
+
+/* Footer */
+
+footer{
+padding:30px;
+text-align:center;
+background:#0a0a0a;
+color:#aaa;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:45px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+padding:20px;
+}
+
+nav ul{
+gap:18px;
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">アオロルト</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Welcome to <span>アオロルト</span></h1>
+
+<p>
+Empowering businesses with innovative solutions, creative strategies,
+and exceptional digital experiences that help brands grow confidently.
+</p>
+
+<a href="#services" class="btn">Explore More</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Business Strategy</h3>
+<p>
+Professional consulting and growth strategies designed for long-term success.
+</p>
+</div>
+
+<div class="card">
+<h3>Brand Identity</h3>
+<p>
+Build a memorable brand with stunning visuals and impactful messaging.
+</p>
+</div>
+
+<div class="card">
+<h3>Digital Solutions</h3>
+<p>
+Websites, marketing, automation, and technology tailored to your business.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" alt="Office">
+
+<div>
+
+<p>
+
+アオロルト is dedicated to helping businesses thrive through innovation,
+creativity, and technology. Our mission is to create meaningful digital
+experiences while delivering measurable business growth.
+
+<br><br>
+
+We believe in quality, trust, and long-lasting partnerships.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 アオロルト. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
